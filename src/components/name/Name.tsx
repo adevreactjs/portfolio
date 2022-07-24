@@ -15,7 +15,7 @@ const nameAnimation = {
 };
 
 const logoAnimation = {
-  hidden: { rotate: 0, x: 600},
+  hidden: { rotate: 0, x: 300},
   visible: (custom: number) => ({
     rotate: 360,
     x: 0,
