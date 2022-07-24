@@ -1,0 +1,38 @@
+.myName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+  h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    color: #42446e;
+    span {
+      background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+@media (max-width: 1170px) {
+  .myName {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    h1 {
+      text-align: center;
+      font-size: 44px;
+    }
+  }
+  .reactLogo {
+    img{
+      height: 450px;
+      width: 450px;
+    }
+  }
+}

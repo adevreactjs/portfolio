@@ -1,0 +1,32 @@
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    margin-right: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #42446e;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .contact {
+    justify-content: center;
+    ul {
+      flex-direction: column;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

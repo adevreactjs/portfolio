@@ -1,0 +1,138 @@
+.projectsList {
+  margin-bottom: 225px;
+}
+.projectsRow {
+  margin-bottom: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projectsList {
+  h2 {
+    margin-bottom: 49px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    text-align: center;
+    color: #42446e;
+  }
+  p {
+    margin-bottom: 96px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 26px;
+    text-align: center;
+    color: #666666;
+  }
+}
+.cart {
+  width: 375px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+  }
+}
+.cartInfo {
+  padding: 27px 31px 25px 28px;
+  h3 {
+    margin-bottom: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 26px;
+    color: #000000;
+  }
+  p {
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    color: #666666;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #42446e;
+  }
+}
+.workLinks {
+  display: flex;
+  align-items: center;
+}
+.workLink {
+  display: flex;
+  align-items: center;
+  margin-right: 48px;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+  button {
+    background-color: white;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .projectsCarts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectsRow {
+    width: 810px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  .cart {
+    margin-bottom: 62px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projectsCarts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectsRow {
+    width: 740px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .cart {
+    margin-bottom: 62px;
+  }
+}

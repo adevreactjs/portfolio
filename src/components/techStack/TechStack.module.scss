@@ -1,0 +1,56 @@
+.myTechStack {
+  margin-bottom: 65px;
+  h2 {
+    margin-bottom: 49px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    text-align: center;
+    color: #42446e;
+  }
+  p {
+    margin-bottom: 147px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 26px;
+    text-align: center;
+    color: #666666;
+  }
+}
+.stackIcon {
+  margin: 0 auto;
+}
+.stackIconRow {
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    // margin-bottom: 206px;
+  }
+  img {
+    width: 105px;
+    height: 105px;
+    // margin-left: 65px;
+    margin-bottom: 85px;
+  }
+}
+@media (max-width: 1180px) {
+  .stackIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stackIconRow {
+    width: 418px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .stackIconRow {
+    width: 293px;
+  }
+}
