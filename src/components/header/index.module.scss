@@ -28,16 +28,19 @@
 .logo {
   // margin-right: 305px;
 }
-.menu ul {
-  text-align: center;
-  li {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    color: #666666;
-    cursor: pointer;
+.menu {
+  ul {
+    text-align: center;
+
+    li {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      color: #666666;
+      cursor: pointer;
+    }
   }
 }
 @media (max-width: 1170px) {

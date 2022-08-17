@@ -27,12 +27,18 @@ const logoAnimation = {
 const Name = () => {
   return (
     <div className={cl.myName}>
-      <motion.h1 initial='hidden' whileInView='visible' custom={3} variants={nameAnimation}>
+      <motion.h1
+        initial='hidden'
+        whileInView='visible'
+        custom={3}
+        variants={nameAnimation}
+        viewport={{ once: true }}>
         Hi 👋, My name is <span>Andrey Sokurenko</span>
-        <p>I build things for web</p>
+        <p>I am Frontend Developer</p>
       </motion.h1>
       <motion.div
         initial='hidden'
+        viewport={{ once: true }}
         whileInView='visible'
         variants={logoAnimation}
         className={cl.reactLogo}>

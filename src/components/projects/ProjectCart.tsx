@@ -7,12 +7,19 @@ import { motion } from 'framer-motion';
 interface ProjectCartProps {
   title: string;
   img: string;
+  link: string;
+
 }
 
 const ProjectCart: FC<ProjectCartProps> = forwardRef(
-  ({ title, img }, ref: React.LegacyRef<HTMLDivElement>) => {
+  ({ title, img, link }, ref: React.LegacyRef<HTMLDivElement>) => {
+
+    const openInNewTab = (url: string) => {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return (
-      <div ref={ref} className={cl.cart}>
+      <div ref={ref} className={cl.cart} onClick={() => openInNewTab(link)}>
         <div className={cl.cartImg}>
           <img src={img} alt='cartBg1' />
         </div>

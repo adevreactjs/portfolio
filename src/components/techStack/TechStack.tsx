@@ -18,7 +18,8 @@ function TechStack() {
   return (
     <motion.div
       initial={{ opacity: 0, x: -300 }}
-      whileInView={{ x: 0, opacity: 1}}
+      viewport={{ once: true }}
+      whileInView={{ x: 0, opacity: 1 }}
       transition={{ ease: 'easeOut', duration: 1 }}
       className={cl.myTechStack}>
       <h2>My Tech Stack</h2>

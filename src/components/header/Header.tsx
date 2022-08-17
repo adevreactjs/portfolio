@@ -34,6 +34,7 @@ const Header: FC = () => {
       <div className={cl.headerNav}>
         <motion.div
           initial='hidden'
+          viewport={{ once: true }}
           whileInView='visible'
           custom={1}
           variants={textAnimation}
@@ -41,7 +42,12 @@ const Header: FC = () => {
           <img src={logo} alt='logo' />
         </motion.div>
         <nav className={cl.navbar}>
-          <motion.ul initial='hidden' whileInView='visible' variants={textAnimation} custom={2}>
+          <motion.ul
+            viewport={{ once: true }}
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation}
+            custom={2}>
             <motion.li whileHover={{ scale: 1.2 }}>
               <Link activeClass='active' to='stack' spy={true} smooth={true} duration={500}>
                 Tech Stack
