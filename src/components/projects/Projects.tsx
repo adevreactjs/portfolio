@@ -1,15 +1,12 @@
 import React from 'react';
 import cl from './Projects.module.scss';
-import cartBg1 from '../assets/cartBg1.png';
-import cartBg2 from '../assets/cartBg2.png';
-import cartBg3 from '../assets/cartBg3.png';
-import cartBg4 from '../assets/cartBg4.png';
-import cartBg5 from '../assets/cartBg5.png';
-import cartBg6 from '../assets/cartBg6.png';
+
 import flags from '../assets/flags.jpg'
 import admin from '../assets/admin.jpg';
 import pizza from '../assets/pizza.jpg';
 import gift from '../assets/gift.jpg';
+import tatoo from '../assets/tatoo.jpg';
+import weather from '../assets/weather.jpg';
 import ProjectCart, { MProjectCart } from './ProjectCart';
 import { motion } from 'framer-motion';
 
@@ -31,36 +28,48 @@ const Projects = () => {
       title: 'Country flags',
       image: flags,
       link: 'https://adevreactjs.github.io/country-flags/',
+      gitLink: 'https://github.com/adevreactjs/country-flags',
+      desc: 'React, JavaScript, Styled-Components',
     },
     {
       id: 2,
       title: 'Admin Panel',
       image: admin,
       link: 'https://adevreactjs.github.io/admin-panel',
+      gitLink: 'https://github.com/adevreactjs/admin-panel',
+      desc: 'React, JavaScript, HTML/SCSS',
     },
     {
       id: 3,
       title: 'Pizza Shop',
       image: pizza,
       link: 'https://adevreactjs.github.io/pizza-shop-v2/',
+      gitLink: 'https://github.com/adevreactjs/pizza-shop-v2',
+      desc: 'React, JavaScript, TypeScript, Redux, HTML/SCSS',
     },
     {
       id: 4,
       title: 'Shop Gifts',
       image: gift,
       link: 'https://adevreactjs.github.io/react-shop',
+      gitLink: 'https://github.com/adevreactjs/react-shop',
+      desc: 'React, JavaScript, Redux, HTML/CSS',
     },
     {
       id: 5,
-      title: 'Project Tile goes here',
-      image: cartBg5,
-      link: 'https://adevreactjs.github.io/country-flags/',
+      title: 'Weather App',
+      image: weather,
+      link: 'https://adevreactjs.github.io/weather-app/',
+      gitLink: 'https://github.com/adevreactjs/weather-app',
+      desc: 'React, JavaScript, TypeScript, Redux, HTML/SCSS',
     },
     {
       id: 6,
-      title: 'Project Tile goes here',
-      image: cartBg6,
-      link: 'https://adevreactjs.github.io/country-flags/',
+      title: 'Tattoo Site',
+      image: tatoo,
+      link: 'https://adevreactjs.github.io/tattoo-studio/',
+      gitLink: 'https://github.com/adevreactjs/tattoo-studio',
+      desc: 'React, JavaScript, HTML/SCSS',
     },
   ];
 
@@ -90,6 +99,8 @@ const Projects = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               link={el.link}
+              gitLink={el.gitLink}
+              desc={el.desc}
             />
           ))}
         </div>

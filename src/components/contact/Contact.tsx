@@ -9,7 +9,9 @@ const Contact = () => {
         <li>+380662095954</li>
         <li>adevreactjs@gmail.com</li>
         <li>
+            <a href='https://github.com/adevreactjs/'>
           <img src={gitIcon} alt='gitIcon' />
+          </a>
         </li>
       </ul>
     </div>

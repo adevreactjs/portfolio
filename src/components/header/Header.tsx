@@ -63,9 +63,11 @@ const Header: FC = () => {
                 Contact
               </Link>
             </motion.li>
-            <div className={cl.gitIcon}>
+            <a href='https://github.com/adevreactjs/'>
+              <div className={cl.gitIcon}>
               <img src={git} alt='git' />
             </div>
+            </a>
           </motion.ul>
         </nav>
         <div className={cl.iconMenu}>

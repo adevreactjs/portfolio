@@ -4,7 +4,7 @@ import cl from './Footer.module.scss'
 const Footer = () => {
   return (
     <footer className={cl.footer}>
-      <p>Copyright © 2021</p>
+      <p>Copyright © 2022</p>
     </footer>
   );
 }
