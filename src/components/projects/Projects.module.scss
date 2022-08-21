@@ -134,6 +134,16 @@
     flex-direction: column;
     align-items: center;
   }
+  .projectsList {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+  }
   .projectsRow {
     width: 740px;
     flex-wrap: wrap;

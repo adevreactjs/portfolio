@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 const Menu = () => {
   return (
     <div className={cl.menu}>
-      <ul>
+      <ul className={cl.menuWrapper}>
         <li>
           <Link activeClass='active' to='stack' spy={true} smooth={true} duration={500}>
             Tech Stack

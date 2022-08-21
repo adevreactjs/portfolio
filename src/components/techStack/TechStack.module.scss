@@ -28,13 +28,9 @@
   display: flex;
   justify-content: space-between;
 
-  &:last-child {
-    // margin-bottom: 206px;
-  }
   img {
     width: 105px;
     height: 105px;
-    // margin-left: 65px;
     margin-bottom: 85px;
   }
 }
@@ -48,9 +44,24 @@
     width: 418px;
     flex-wrap: wrap;
   }
+  .myTechStack {
+    h2 {
+      font-size: 32px;
+    }
+  }
 }
 @media (max-width: 450px) {
   .stackIconRow {
     width: 293px;
+  }
+  .myTechStack {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
   }
 }

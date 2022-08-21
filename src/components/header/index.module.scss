@@ -29,6 +29,13 @@
   // margin-right: 305px;
 }
 .menu {
+  transition: all 1s ease-out;
+  .menuWrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   ul {
     text-align: center;
 

@@ -30,7 +30,7 @@
     }
   }
   .reactLogo {
-    img{
+    img {
       height: 450px;
       width: 450px;
     }
@@ -38,9 +38,14 @@
 }
 @media (max-width: 380px) {
   .reactLogo {
-    img{
+    img {
       height: 400px;
       width: 400px;
+    }
+  }
+  .myName {
+    h1 {
+      font-size: 36px;
     }
   }
 }
