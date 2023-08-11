@@ -43,9 +43,9 @@ const Projects = () => {
       id: 3,
       title: 'Pizza Shop',
       image: pizza,
-      link: 'https://adevreactjs.github.io/pizza-shop-v2/',
-      gitLink: 'https://github.com/adevreactjs/pizza-shop-v2',
-      desc: 'React, JavaScript, TypeScript, Redux, HTML/SCSS',
+      link: 'https://burger-store-five.vercel.app/',
+      gitLink: 'https://github.com/adevreactjs/burger-store',
+      desc: 'Next.js, Tailwindcss, TypeScript, Redux Toolkit',
     },
     {
       id: 4,
